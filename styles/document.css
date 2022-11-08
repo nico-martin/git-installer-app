@@ -1,0 +1,7 @@
+body {
+  background-color: #fff;
+}
+
+body > div:first-child {
+  //min-height: 100vh;
+}

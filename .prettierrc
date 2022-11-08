@@ -1,0 +1,14 @@
+{
+  "importOrder": [
+    "react",
+    "next",
+    "^@api/(.*)$",
+    "^@common/(.*)$",
+    "@theme",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
