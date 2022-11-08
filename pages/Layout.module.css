@@ -1,0 +1,8 @@
+.wrapper {
+  h2 {
+    margin-top: var(--space-section);
+  }
+  p {
+    margin-top: var(--space-gutter);
+  }
+}

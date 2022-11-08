@@ -2,10 +2,13 @@
   --space-gutter: 2rem;
   --space-gutter-big: 3rem;
   --space-gutter-half: 0.8rem;
-  --space-section: 3.5rem;
-  --space-groups: 2.5rem;
+  --space-section: 6.5rem;
+  --space-groups: 3.5rem;
   --space-component: 1.5rem;
   --space-inside: 0.3rem;
 
   --border-radius-card: 0.4rem;
+
+  --content-width: 900px;
+  --content-max-width: 90%;
 }

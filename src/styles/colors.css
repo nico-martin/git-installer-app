@@ -1,6 +1,7 @@
 :root {
   --c-orange: #f1502f;
-  --c-orange-dark: #be4026;
+  --c-orange-dark: #cb4428;
+  --c-orange-light: #ef8772;
   --c-bronze: #3e2c00;
   --c-blue: #009fb4;
   --c-blue-dark: #006168;
@@ -18,6 +19,7 @@
   --c-border-light: #cbcbcb;
   --c-primary: var(--c-orange);
   --c-primary-dark: var(--c-orange-dark);
+  --c-primary-light: var(--c-orange-light);
 
   --c-message-color: #6dafc4;
   --c-message-bkg: #edfafc;

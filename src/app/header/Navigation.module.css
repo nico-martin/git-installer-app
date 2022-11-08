@@ -1,0 +1,17 @@
+.root {
+}
+
+.element {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: var(--fs-h4);
+
+  & + .element {
+    margin-left: 1.5em;
+  }
+}
+
+.elementActive {
+  text-decoration: underline;
+}

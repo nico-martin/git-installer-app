@@ -1,11 +1,11 @@
 :root {
-  --fs-h1: 2rem;
-  --fs-h2: 1.6rem;
-  --fs-h3: 1.3rem;
-  --fs-h4: 1.1rem;
-  --fs-h5: 1.1rem;
-  --fs-h6: 1.1rem;
-  --fs: 1.1rem;
+  --fs-h1: 2.4rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-h4: 1.3rem;
+  --fs-h5: 1.3rem;
+  --fs-h6: 1.3rem;
+  --fs: 1.3rem;
   --fs-msmall: 0.95rem;
   --fs-small: 0.8rem;
   --fs-xsmall: 0.7rem;
@@ -15,7 +15,7 @@
 
 body {
   font-family: var(--font);
-  line-height: 1.3;
+  line-height: 1.5;
   font-weight: 300;
   color: var(--c-p);
   font-size: var(--fs);

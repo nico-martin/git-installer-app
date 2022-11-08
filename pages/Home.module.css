@@ -1,0 +1,21 @@
+.intro {
+  margin-top: -250px;
+  margin-bottom: var(--space-section);
+}
+
+.claim {
+  text-align: center;
+  font-size: var(--fs-h1);
+  font-family: var(--font-heading);
+  padding: var(--space-section) 20px 0 20px;
+  font-weight: 300;
+}
+
+.codeSection {
+  text-align: center;
+  margin-top: var(--space-section);
+
+  & > * + * {
+    margin-left: var(--space-gutter);
+  }
+}

@@ -23,10 +23,16 @@
         "pages/api/*"
       ],
       "@common/*": [
-        "common/*"
+        "src/common/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@public/*": [
+        "public/*"
       ],
       "@theme": [
-        "theme/index.ts"
+        "src/theme/index.ts"
       ]
     }
   },

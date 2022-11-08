@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+}
+
+.button {
+  //border-bottom: var(--navigation-border-bottom) solid var(--c-secondary);
+  padding: 1em;
+}
+
+.buttonActive {
+  //border-bottom-color: var(--c-border-semi-dark);
+}

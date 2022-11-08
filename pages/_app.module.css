@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+}
+
+.main {
+  margin: var(--space-groups) auto;
+  width: var(--content-width);
+  max-width: var(--content-max-width);
+}
+
+.footer {
+  margin-top: auto;
+}

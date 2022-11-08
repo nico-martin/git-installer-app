@@ -1,0 +1,33 @@
+.root {
+  z-index: 9999;
+  position: relative;
+}
+
+.img {
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 5px;
+  border: 0.5px solid #fff;
+}
+
+.imgWP {
+  width: 70%;
+  transform: translateX(-10%);
+}
+
+.imgGitHub {
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  right: 0;
+  transform: translateX(20%) translateY(15%);
+}
+
+.loaderWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 2rem;
+  width: 2rem;
+}
