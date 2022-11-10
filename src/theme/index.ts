@@ -8,3 +8,5 @@ export { default as Tooltip } from './misc/Tooltip';
 export { default as PageBorderTop } from './misc/PageBorderTop';
 export { default as PageBorderBottom } from './misc/PageBorderBottom';
 export { default as IconBubble, ICON_BUBBLE_TYPE } from './misc/IconBubble';
+
+export { Table, Row, TBody, THead, CellBody, CellHeading } from './table/Table';

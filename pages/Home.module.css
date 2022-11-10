@@ -19,3 +19,19 @@
     margin-left: var(--space-gutter);
   }
 }
+
+.featuresTable {
+  margin: var(--space-gutter-big) auto 0 auto;
+}
+
+.cellFeature {
+}
+
+.cellValue {
+  text-align: center;
+}
+
+p.sponsor {
+  text-align: center;
+  margin-top: var(--space-gutter-big);
+}
