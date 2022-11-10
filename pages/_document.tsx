@@ -36,13 +36,13 @@ export default class MyDocument extends Document {
           <meta name="robots" content="all" key="robots" />
           <title>{title}</title>
           <meta name="description" content={description} />
-          <meta property="og:image" content="/img/banner-facebook.jpg" />
+          <meta property="og:image" content="/img/banner-meta-facebook.jpg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
-          <meta name="twitter:image" content="/img/banner-twitter.jpg" />
+          <meta name="twitter:image" content="/img/banner-meta-twitter.jpg" />
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
         </Head>
