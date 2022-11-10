@@ -13,6 +13,11 @@
 .imgWP {
   width: 70%;
   transform: translateX(-10%);
+
+  @mixin tablet {
+    width: 60%;
+    transform: translateX(10%);
+  }
 }
 
 .imgGitHub {
@@ -21,6 +26,11 @@
   bottom: 0;
   right: 0;
   transform: translateX(20%) translateY(15%);
+
+  @mixin tablet {
+    width: 50%;
+    transform: translateX(-10%) translateY(15%);
+  }
 }
 
 .loaderWrapper {

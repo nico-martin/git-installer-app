@@ -137,7 +137,7 @@ const Home: React.FC<
           rel="noreferrer"
           useAnchor
         >
-          Github Sponsors
+          GitHub Sponsors
         </Button>
       </p>
     </div>

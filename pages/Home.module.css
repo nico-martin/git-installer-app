@@ -1,6 +1,11 @@
 .intro {
   margin-top: -250px;
   margin-bottom: var(--space-section);
+
+  @mixin mobile {
+    margin-top: -200px;
+    margin-bottom: var(--space-gutter);
+  }
 }
 
 .claim {
@@ -18,6 +23,16 @@
   & > * + * {
     margin-left: var(--space-gutter);
   }
+
+  @mixin mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > * + * {
+      margin-top: var(--space-gutter);
+      margin-left: 0;
+    }
+  }
 }
 
 .featuresTable {
@@ -29,6 +44,10 @@
 
 .cellValue {
   text-align: center;
+
+  @mixin mobile {
+    display: none;
+  }
 }
 
 p.sponsor {

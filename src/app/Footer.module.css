@@ -18,12 +18,23 @@
   width: var(--content-width);
   max-width: var(--content-max-width);
   padding: var(--space-section) 0 var(--space-gutter-big) 0;
+  @mixin tablet {
+    padding-top: var(--space-gutter-big);
+  }
+
   display: flex;
+
+  @mixin mobile {
+    padding-top: var(--space-gutter);
+    flex-direction: column;
+  }
 }
 
 .claim {
   width: 70%;
-
+  @mixin mobile {
+    width: 100%;
+  }
   p + p {
     margin-top: 0.5rem;
 
@@ -37,6 +48,12 @@
 .credits {
   text-align: right;
   margin-left: auto;
+
+  @mixin mobile {
+    text-align: left;
+    margin-left: 0;
+    margin-top: var(--space-gutter);
+  }
 }
 
 .address {

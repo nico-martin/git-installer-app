@@ -1,15 +1,15 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   plugins: [
     [
-      "postcss-mixins",
+      'postcss-mixins',
       {
-        mixinsDir: path.join(__dirname, "styles/mixins"),
+        mixinsDir: path.join(__dirname, 'src/styles/mixins'),
       },
     ],
-    "postcss-nested",
-    "autoprefixer",
-    "postcss-preset-env",
+    'postcss-nested',
+    'autoprefixer',
+    'postcss-preset-env',
   ],
 };

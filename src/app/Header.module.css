@@ -11,16 +11,26 @@
   max-width: var(--content-max-width);
   position: relative;
   padding-top: var(--space-gutter);
+  display: flex;
+  justify-content: space-between;
+
+  @mixin mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .headerBig {
   min-height: 400px;
+  @mixin mobile {
+    min-height: 400px;
+  }
 }
 
 .navigation {
-  position: absolute;
-  right: 0;
-  top: var(--space-gutter);
+  @mixin mobile {
+    margin-top: var(--space-gutter);
+  }
 }
 
 .border {
@@ -45,6 +55,10 @@
   color: #fff;
   font-size: 2.5rem;
   text-decoration: none;
+
+  @mixin mobile {
+    text-align: center;
+  }
 }
 
 .intro {
