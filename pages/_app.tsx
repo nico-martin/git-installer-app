@@ -1,7 +1,6 @@
 import React from 'react';
 import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
-import { Head } from 'next/document';
 import combineProvider from '@common/combineProviders';
 import { IntlContextProvider } from '@common/intl/intlContext';
 import Footer from '@app/Footer';
