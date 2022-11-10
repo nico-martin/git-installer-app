@@ -2,6 +2,10 @@ import React from 'react';
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
+const title = 'Git Installer';
+const description =
+  'Install and update WordPress themes and plugins directly from your Git repository via GitHub, Gitlab or Bitbucket.';
+
 export default class MyDocument extends Document {
   render() {
     return (
@@ -30,7 +34,17 @@ export default class MyDocument extends Document {
             key="viewport"
           />
           <meta name="robots" content="all" key="robots" />
-          <title>Git Installer</title>
+          <title>{title}</title>
+          <meta name="description" content={description} />
+          <meta property="og:image" content="/img/banner-facebook.jpg" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta name="twitter:image" content="/img/banner-twitter.jpg" />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={description} />
         </Head>
         <body>
           <Main />
