@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 // eslint-disable-next-line @next/next/no-document-import-in-page
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
             key="viewport"
           />
           <meta name="robots" content="all" key="robots" />
+          <title>Git Installer</title>
         </Head>
         <body>
           <Main />
