@@ -2,6 +2,7 @@ import React from 'react';
 import { useIntl } from 'react-intl';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { PluginInfos, getPluginInfos } from '@common/plugin';
+import PricingSupport from '@app/PricingSupport';
 import layoutStyles from './Layout.module.css';
 import styles from './_app.module.css';
 import Home from './index';
@@ -24,6 +25,7 @@ const Supporter: React.FC<
         {formatMessage({ id: 'supporter.title' })}
       </h1>
       <p>{formatMessage({ id: 'supporter.desc' })}</p>
+      <PricingSupport onylSupport />
     </div>
   );
 };

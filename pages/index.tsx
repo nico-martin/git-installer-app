@@ -3,6 +3,7 @@ import { useIntl } from 'react-intl';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Link from 'next/link';
 import { PluginInfos, getPluginInfos } from '@common/plugin';
+import PricingSupport from '@app/PricingSupport';
 import Intro from '@app/home/Intro';
 import {
   Button,
@@ -117,113 +118,7 @@ const Home: React.FC<
           ))}
         </TBody>
       </Table>
-      <h2>{formatMessage({ id: 'home.pricing.title' })}</h2>
-      <p>
-        {formatMessage(
-          { id: 'home.pricing.desc1' },
-          {
-            empty: <span />,
-            b: (chunks) => <b>{chunks}</b>,
-            a: (chunks) => (
-              <a
-                href="https://github.com/SayHelloGmbH/git-installer/blob/main/LICENSE"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {chunks}
-              </a>
-            ),
-          }
-        )}
-      </p>
-      <p>
-        {formatMessage(
-          { id: 'home.pricing.desc2' },
-          {
-            empty: <span />,
-            a: (chunks) => (
-              <a
-                href="https://github.com/sponsors/SayHelloGmbH"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {chunks}
-              </a>
-            ),
-          }
-        )}
-        <br />
-        {formatMessage({ id: 'home.pricing.desc3' })} ❤
-      </p>
-      <div className={styles.tiers}>
-        {[
-          {
-            price: formatMessage({ id: 'home.pricing.tiers.1.price' }),
-            title: formatMessage({ id: 'home.pricing.tiers.1.title' }),
-            listItems: [
-              formatMessage({ id: 'home.pricing.tiers.1.list.1' }),
-              formatMessage(
-                { id: 'home.pricing.tiers.1.list.2' },
-                {
-                  empty: <span />,
-                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
-                }
-              ),
-            ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236263',
-          },
-          {
-            price: formatMessage({ id: 'home.pricing.tiers.2.price' }),
-            title: formatMessage({ id: 'home.pricing.tiers.2.title' }),
-            listItems: [
-              formatMessage({ id: 'home.pricing.tiers.2.list.1' }),
-              formatMessage(
-                { id: 'home.pricing.tiers.2.list.2' },
-                {
-                  empty: <span />,
-                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
-                }
-              ),
-            ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236264',
-          },
-          {
-            price: formatMessage({ id: 'home.pricing.tiers.3.price' }),
-            title: formatMessage({ id: 'home.pricing.tiers.3.title' }),
-            listItems: [
-              formatMessage({ id: 'home.pricing.tiers.3.list.1' }),
-              formatMessage(
-                { id: 'home.pricing.tiers.3.list.2' },
-                {
-                  empty: <span />,
-                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
-                }
-              ),
-            ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236265',
-          },
-        ].map(({ price, title, listItems, link }, i) => (
-          <div className={styles.tier} key={i}>
-            <span className={styles.tierPrice}>{price}</span>
-            <h3 className={styles.tierTitle}>{title}</h3>
-            <ul className={styles.tierList}>
-              {listItems.map((e, i) => (
-                <li key={i}>{e}</li>
-              ))}
-            </ul>
-            <Button
-              className={styles.tierButton}
-              href={link}
-              target="_blank"
-              rel="noreferrer"
-              useAnchor
-              icon="openInNew"
-            >
-              GitHub Sponsors
-            </Button>
-          </div>
-        ))}
-      </div>
+      <PricingSupport />
     </div>
   );
 };

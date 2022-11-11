@@ -4,7 +4,7 @@ import styles from './Table.module.css';
 
 export const Table: React.FC<{
   children: JSX.Element | Array<JSX.Element>;
-  minWidth: number;
+  minWidth?: number;
   className?: string;
   classNameWrapper?: string;
 }> = ({ children, minWidth = 600, className = '', classNameWrapper = '' }) => (
