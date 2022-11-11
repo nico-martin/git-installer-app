@@ -31,10 +31,6 @@ const Footer: React.FC<{
         <div className={styles.claim}>
           <p>{formatMessage({ id: 'footer.claim1' })}</p>
           <p>{formatMessage({ id: 'footer.claim2' })}</p>
-          <p className={styles.legal}>
-            <b>{formatMessage({ id: 'footer.legal.title' })}</b>:{' '}
-            {formatMessage({ id: 'footer.legal' })}
-          </p>
         </div>
         <div className={styles.credits}>
           <p>{formatMessage({ id: 'footer.credits' })}:</p>
@@ -45,6 +41,8 @@ const Footer: React.FC<{
               Thunstrasse 4
               <br />
               3700 Spiez
+              <br />
+              Switzerland
             </p>
             <p>
               <a href="https://sayhello.ch" target="_blank" rel="noreferrer">
@@ -52,13 +50,14 @@ const Footer: React.FC<{
               </a>
             </p>
             <p>
-              <a href="tel:+41335251221">+4133 525 1221</a>
-            </p>
-            <p>
               <a href="mailto:hello@sayhello.ch">hello@sayhello.ch</a>
             </p>
           </div>
         </div>
+        <p className={styles.legal}>
+          <b>{formatMessage({ id: 'footer.legal.title' })}</b>:{' '}
+          {formatMessage({ id: 'footer.legal' })}
+        </p>
       </footer>
       <div className={styles.border}>
         <PageBorderBottom className={styles.borderLine} />

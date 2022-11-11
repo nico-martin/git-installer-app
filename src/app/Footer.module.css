@@ -22,32 +22,38 @@
     padding-top: var(--space-gutter-big);
   }
 
-  display: flex;
-
+  display: grid;
+  grid-template-areas:
+    'claim claim credits'
+    'legal legal credits';
   @mixin mobile {
     padding-top: var(--space-gutter);
-    flex-direction: column;
+    display: block;
   }
 }
 
 .claim {
   width: 70%;
+  grid-area: claim;
+
   @mixin mobile {
     width: 100%;
   }
   p + p {
     margin-top: 0.5rem;
-
-    &.legal {
-      margin-top: 2rem;
-      font-size: var(--fs-small);
-    }
   }
+}
+
+.legal {
+  margin-top: 2rem;
+  font-size: var(--fs-small);
+  grid-area: legal;
 }
 
 .credits {
   text-align: right;
   margin-left: auto;
+  grid-area: credits;
 
   @mixin mobile {
     text-align: left;

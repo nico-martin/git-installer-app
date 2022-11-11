@@ -29,6 +29,8 @@
   "home.pricing.tiers.3.title": "Gold contributor",
   "home.pricing.tiers.3.list.1": "You or your company support the further development of \"Git Installer\".",
   "home.pricing.tiers.3.list.2": "If wanted, your name or logo together with your URL will be displayed in large in the Gold section on: <a>git-installer.com/supporter</a>",
+  "supporter.title": "Supporter",
+  "supporter.desc": "Soon the people and companies who make this plugin possible will be listed here. THANK YOU!",
   "footer.claim1": "\"Git Installer\" is a free and open source WordPress plugin to install and update WordPress themes and plugins directly from your Git repository.",
   "footer.claim2": "It works with public and private repositories, different branches, subdirectories and even allows automated updates via webhooks. Furthermore, plugins or themes are automatically recognised and validated and it also supports must use plugins and multisite installations.",
   "footer.legal.title": "Privacy",

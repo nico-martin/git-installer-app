@@ -1,6 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import Link from 'next/link';
 import { PluginInfos, getPluginInfos } from '@common/plugin';
 import Intro from '@app/home/Intro';
 import {
@@ -165,15 +166,7 @@ const Home: React.FC<
                 { id: 'home.pricing.tiers.1.list.2' },
                 {
                   empty: <span />,
-                  a: (chunks) => (
-                    <a
-                      href="https://www.git-installer.com/supporter"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {chunks}
-                    </a>
-                  ),
+                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
                 }
               ),
             ],
@@ -188,15 +181,7 @@ const Home: React.FC<
                 { id: 'home.pricing.tiers.2.list.2' },
                 {
                   empty: <span />,
-                  a: (chunks) => (
-                    <a
-                      href="https://www.git-installer.com/supporter"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {chunks}
-                    </a>
-                  ),
+                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
                 }
               ),
             ],
@@ -211,15 +196,7 @@ const Home: React.FC<
                 { id: 'home.pricing.tiers.3.list.2' },
                 {
                   empty: <span />,
-                  a: (chunks) => (
-                    <a
-                      href="https://www.git-installer.com/supporter"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {chunks}
-                    </a>
-                  ),
+                  a: (chunks) => <Link href="/supporter">{chunks}</Link>,
                 }
               ),
             ],
