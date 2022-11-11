@@ -57,6 +57,14 @@
   }
 }
 
+.button.hasIconLeft {
+  padding-left: 2.2em;
+}
+
+.button.hasIconRight {
+  padding-right: 2.2em;
+}
+
 .loader {
   position: absolute;
   left: 50%;

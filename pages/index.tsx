@@ -1,7 +1,9 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import Link from 'next/link';
 import { PluginInfos, getPluginInfos } from '@common/plugin';
+import PricingSupport from '@app/PricingSupport';
 import Intro from '@app/home/Intro';
 import {
   Button,
@@ -116,40 +118,7 @@ const Home: React.FC<
           ))}
         </TBody>
       </Table>
-      <h2>{formatMessage({ id: 'home.pricing.title' })}</h2>
-      <p>
-        {formatMessage(
-          { id: 'home.pricing.desc1' },
-          {
-            empty: <span />,
-            b: (chunks) => <b>{chunks}</b>,
-            a: (chunks) => (
-              <a
-                href="https://github.com/SayHelloGmbH/git-installer/blob/main/LICENSE"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {chunks}
-              </a>
-            ),
-          }
-        )}
-      </p>
-      <p>
-        {formatMessage({ id: 'home.pricing.desc2' })}
-        <br />
-        {formatMessage({ id: 'home.pricing.desc3' })} ❤
-      </p>
-      <p className={styles.sponsor}>
-        <Button
-          href="https://github.com/sponsors/SayHelloGmbH"
-          target="_blank"
-          rel="noreferrer"
-          useAnchor
-        >
-          GitHub Sponsors
-        </Button>
-      </p>
+      <PricingSupport />
     </div>
   );
 };

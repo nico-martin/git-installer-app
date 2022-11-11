@@ -26,7 +26,11 @@ const Navigation: React.FC<{ className?: string }> = ({ className = '' }) => {
           </Link>
         );
       })*/}
-      <Button className={cn(styles.element)}>
+      <Button
+        className={cn(styles.element)}
+        href="https://update.git-installer.com/zip.php?release=latest"
+        useAnchor
+      >
         {formatMessage({ id: 'navigation.download' })}
       </Button>
     </nav>

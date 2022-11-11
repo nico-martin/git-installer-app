@@ -4,6 +4,11 @@
   border-spacing: 0;
 }
 
+.tableWrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .thead {
 }
 
