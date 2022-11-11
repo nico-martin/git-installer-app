@@ -22,7 +22,8 @@ export interface PluginInfos {
   };
 }
 
-const INFO_URL = 'https://update.git-installer.com/infos.php?release=latest';
+const INFO_URL =
+  'https://update.git-installer.com/infos.php?release=latest&utm_source=app';
 
 export const getPluginInfos = async (): Promise<PluginInfos> => {
   const res = await fetch(INFO_URL);
