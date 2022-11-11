@@ -35,6 +35,8 @@ const Button: React.FC<{
         [styles.appearanceButton]: appearance === 'button',
         [styles.isLoading]: loading,
         [styles.isDisabled]: disabled,
+        [styles.hasIconRight]: Boolean(icon) && !iconLeft,
+        [styles.hasIconLeft]: Boolean(icon) && iconLeft,
         [styles.isLarge]: size === 'large',
       }),
     },
