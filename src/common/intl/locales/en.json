@@ -14,7 +14,7 @@
   "home.features.title": "Features",
   "home.features.desc": "\"Git Installer\" works with public and private repositories, different branches, subdirectories and even allows automated updates via webhooks. Furthermore, plugins or themes are automatically recognised and validated and it also supports must use plugins and multisite installations.",
   "home.pricing.title": "Pricing and Support",
-  "home.pricing.desc1": "\"Git Installer\" is licensed under the <a>MIT licence</a> and is thus available <b>free of charge</b> as open source software for private and commercial use.",
+  "home.pricing.desc1": "\"Git Installer\" is licensed under the <a>MIT licence</a> and is thus available <b>free of charge</b> as open source software for private and commercial use. Unlike other similar plugins, there is no pro version, but <b>all features are included in this version</b>.",
   "home.pricing.desc2": "To keep it that way, we depend on your support. In order to actively involve you in the further development, we have set up a <a>Github Sponsors page</a>. Various sponsorship packages with different benefits can be booked via this page.",
   "home.pricing.desc3": "Thank you for being part of the project!",
   "home.pricing.tiers.1.price": "5$/month",
