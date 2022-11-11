@@ -4,9 +4,18 @@ import styles from './Table.module.css';
 
 export const Table: React.FC<{
   children: JSX.Element | Array<JSX.Element>;
+  minWidth: number;
   className?: string;
-}> = ({ children, className = '' }) => (
-  <table className={cn(className, styles.table)}>{children}</table>
+  classNameWrapper?: string;
+}> = ({ children, minWidth = 600, className = '', classNameWrapper = '' }) => (
+  <div className={cn(classNameWrapper, styles.tableWrapper)}>
+    <table
+      className={cn(className, styles.table)}
+      style={{ minWidth: minWidth }}
+    >
+      {children}
+    </table>
+  </div>
 );
 
 export const THead: React.FC<{

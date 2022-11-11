@@ -40,9 +40,12 @@
 }
 
 .cellFeature {
+  p {
+    margin-top: 0;
+  }
 }
 
-.cellValue {
+td.cellValue {
   text-align: center;
 }
 
