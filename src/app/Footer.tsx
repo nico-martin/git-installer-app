@@ -1,6 +1,6 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetStaticProps, InferGetServerSidePropsType } from 'next';
 import cn from '@common/classnames';
 import { PageBorderBottom } from '@theme';
 import styles from './Footer.module.css';
@@ -8,7 +8,7 @@ import styles from './Footer.module.css';
 const githubApi =
   'https://api.github.com/repos/SayHelloGmbH/git-installer/releases';
 
-export const getServerSideProps: GetServerSideProps<{
+export const getStaticProps: GetStaticProps<{
   version: string;
 }> = async (context) => {
   const res = await fetch(githubApi);

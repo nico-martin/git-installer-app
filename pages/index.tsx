@@ -1,6 +1,6 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetStaticProps, InferGetServerSidePropsType } from 'next';
 import Link from 'next/link';
 import { PluginInfos, getPluginInfos } from '@common/plugin';
 import PricingSupport from '@app/PricingSupport';
@@ -17,7 +17,7 @@ import {
 import styles from './Home.module.css';
 import layoutStyles from './Layout.module.css';
 
-export const getServerSideProps: GetServerSideProps<{
+export const getStaticProps: GetStaticProps<{
   plugin: PluginInfos;
 }> = async (context) => ({
   props: {
@@ -25,9 +25,9 @@ export const getServerSideProps: GetServerSideProps<{
   },
 });
 
-const Home: React.FC<
-  InferGetServerSidePropsType<typeof getServerSideProps>
-> = ({ plugin }) => {
+const Home: React.FC<InferGetServerSidePropsType<typeof getStaticProps>> = ({
+  plugin,
+}) => {
   const { formatMessage } = useIntl();
   return (
     <div className={layoutStyles.wrapper}>
