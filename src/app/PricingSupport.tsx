@@ -3,7 +3,7 @@ import { useIntl } from 'react-intl';
 import Link from 'next/link';
 import cn from '@common/classnames';
 import { Button } from '@theme';
-import styles from '../../pages/Home.module.css';
+import styles from './PricingSupport.module.css';
 
 const PricingSupport: React.FC<{
   className?: string;
