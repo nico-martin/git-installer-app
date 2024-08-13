@@ -36,21 +36,21 @@ const Footer: React.FC<{
           <p>{formatMessage({ id: 'footer.credits' })}:</p>
           <div className={styles.address}>
             <p>
-              <b>Say Hello GmbH</b>
-              <br />
+              <b>Nico Martin</b>
+              {/*<br />
               Thunstrasse 4
               <br />
               3700 Spiez
               <br />
-              Switzerland
+              Switzerland*/}
             </p>
             <p>
               <a href="https://sayhello.ch" target="_blank" rel="noreferrer">
-                https://sayhello.ch
+                https://nico.dev
               </a>
             </p>
             <p>
-              <a href="mailto:hello@sayhello.ch">hello@sayhello.ch</a>
+              <a href="mailto:mail@nico.dev">mail@nico.dev</a>
             </p>
           </div>
         </div>

@@ -40,7 +40,7 @@ const Home: React.FC<InferGetServerSidePropsType<typeof getStaticProps>> = ({
         <Button
           useAnchor
           appearance="none"
-          href="https://github.com/SayHelloGmbH/git-installer"
+          href="https://github.com/nico-martin/git-installer"
           size="large"
           target="_blank"
         >

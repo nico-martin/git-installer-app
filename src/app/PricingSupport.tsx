@@ -26,7 +26,7 @@ const PricingSupport: React.FC<{
               b: (chunks) => <b>{chunks}</b>,
               a: (chunks) => (
                 <a
-                  href="https://github.com/SayHelloGmbH/git-installer/blob/main/LICENSE"
+                  href="https://github.com/nico-martin/git-installer/blob/main/LICENSE"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -56,7 +56,7 @@ const PricingSupport: React.FC<{
         <br />
         {formatMessage({ id: 'support.desc3' })} ❤
       </p>
-      <div className={styles.tiers}>
+      {/*<div className={styles.tiers}>
         {[
           {
             price: formatMessage({ id: 'support.tiers.1.price' }),
@@ -124,7 +124,7 @@ const PricingSupport: React.FC<{
             </Button>
           </div>
         ))}
-      </div>
+      </div>*/}
     </div>
   );
 };
