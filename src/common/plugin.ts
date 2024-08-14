@@ -25,6 +25,7 @@ export interface PluginInfos {
 const INFO_URL =
   'https://update.git-installer.com/infos.php?release=latest&ref=app';
 
+
 export const getPluginInfos = async (): Promise<PluginInfos> => {
   const res = await fetch(INFO_URL);
   return await res.json();
