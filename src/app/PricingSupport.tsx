@@ -44,7 +44,7 @@ const PricingSupport: React.FC<{
             empty: <span />,
             a: (chunks) => (
               <a
-                href="https://github.com/sponsors/SayHelloGmbH"
+                href="https://github.com/sponsors/nico-martin"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -71,7 +71,7 @@ const PricingSupport: React.FC<{
                 }
               ),
             ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236263',
+            link: 'https://github.com/sponsors/nico-martin/sponsorships?tier_id=236263',
           },
           {
             price: formatMessage({ id: 'support.tiers.2.price' }),
@@ -86,7 +86,7 @@ const PricingSupport: React.FC<{
                 }
               ),
             ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236264',
+            link: 'https://github.com/sponsors/nico-martin/sponsorships?tier_id=236264',
           },
           {
             price: formatMessage({ id: 'support.tiers.3.price' }),
@@ -101,7 +101,7 @@ const PricingSupport: React.FC<{
                 }
               ),
             ],
-            link: 'https://github.com/sponsors/SayHelloGmbH/sponsorships?tier_id=236265',
+            link: 'https://github.com/sponsors/nico-martin/sponsorships?tier_id=236265',
           },
         ].map(({ price, title, listItems, link }, i) => (
           <div className={styles.tier} key={i}>
