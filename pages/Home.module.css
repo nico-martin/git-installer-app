@@ -1,9 +1,9 @@
 .intro {
-  margin-top: -250px;
+  margin-top: -190px;
   margin-bottom: var(--space-section);
 
   @mixin mobile {
-    margin-top: -200px;
+    margin-top: -190px;
     margin-bottom: var(--space-gutter);
   }
 }

@@ -9,8 +9,8 @@
   --fs-msmall: 1rem;
   --fs-small: 0.9rem;
   --fs-xsmall: 0.7rem;
-  --font-heading: var(--font-gtHaptik);
-  --font: var(--font-sourceSerif);
+  --font-heading: var(--font-affogato);
+  --font: var(--font-affogato);
 }
 
 body {

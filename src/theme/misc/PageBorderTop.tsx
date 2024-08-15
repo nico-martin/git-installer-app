@@ -8,15 +8,15 @@ const PageBorderTop: React.FC<{ className?: string }> = ({
   <svg
     className={cn(className, styles.root)}
     version="1.1"
-    viewBox="0 0 4000 280"
-    enableBackground="new 0 0 4000 280"
+    viewBox="0 0 4000 180"
+    enableBackground="new 0 0 4000 180"
     preserveAspectRatio="xMinYMin meet"
   >
-    <g>
+    <g transform="matrix(1.02228,0,0,0.756869,-89.127,-31.9233)">
       <path
+        d="M4000,42.178L4000,280L87.184,280L4000,42.178Z"
         fill="currentColor"
-        d="M4000,280l-4000,0l0,-275c0,0 901.184,145.011 2000,145c1162.33,-0.011 2000,-145 2000,-145"
-      ></path>
+      />
     </g>
   </svg>
 );
