@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect all traffic to https://nico.dev
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^nico\.dev$ [NC]
+RewriteRule ^(.*)$ https://nico.dev/$1 [L,R=301]
