@@ -12,9 +12,9 @@ const PageBorderTop: React.FC<{ className?: string }> = ({
     enableBackground="new 0 0 4000 180"
     preserveAspectRatio="xMinYMin meet"
   >
-    <g transform="matrix(-23.9682,-1.44435e-14,1.03586e-15,-1.66962,6340.58,255.103)">
+    <g transform="matrix(3.0631e-17,0.500243,-33.4651,2.04915e-15,6023.72,-206.297)">
       <path
-        d="M264.541,44.982L264.541,152.791L97.653,152.791L264.541,44.982Z"
+        d="M707.872,180L412.394,180L412.394,60.472L606.55,60.472L707.872,180Z"
         fill="currentColor"
       />
     </g>
