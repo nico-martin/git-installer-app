@@ -3,7 +3,7 @@
   margin-bottom: var(--space-section);
 
   @mixin mobile {
-    margin-top: -190px;
+    margin-top: -120px;
     margin-bottom: var(--space-gutter);
   }
 }
